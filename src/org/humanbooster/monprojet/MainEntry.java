@@ -1,26 +1,17 @@
 package org.humanbooster.monprojet;
-
-import com.sun.tools.javac.Main;
-import org.humanbooster.monprojet.model.CleanDay;
-import org.humanbooster.monprojet.model.House;
-import org.humanbooster.monprojet.model.resto.Dessert;
-import org.humanbooster.monprojet.model.resto.Drink;
-import org.humanbooster.monprojet.model.resto.MainCourse;
-import org.humanbooster.monprojet.model.resto.Order;
+import org.humanbooster.monprojet.model.animaux.Cheval;
+import org.humanbooster.monprojet.model.animaux.Tigre;
 
 
 public class MainEntry {
 
     public static void main(String[] args) {
 
-        Order o = new Order("OD4987", Drink.Beer, MainCourse.Beef, Dessert.ChocoSnack);
-        System.out.println("Prix total de la commande: " + o.totalPrice());
+        Tigre tigre = new Tigre();
+        System.out.println(tigre.manger());
+        Cheval cheval = new Cheval();
+        System.out.println(cheval.manger());
 
     }
 
 }
-
-
-// 0003
-// 0004
-// 0005 --> deux versions
